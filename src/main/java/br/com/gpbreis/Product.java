@@ -62,6 +62,16 @@ public class Product {
         this.price = price;
     }
 
+    public void addToInventory(int quantity) {
+        this.unitsInStock += quantity;
+    }
+
+    public void deductFromInventory(int quantity) {
+        if (this.unitsInStock > 0 && this.unitsInStock - quantity >= 0) {
+            this.unitsInStock -= quantity;
+        }
+    }
+
     @Override
     public String toString() {
         return "Item Number\t\t : " + this.item +
