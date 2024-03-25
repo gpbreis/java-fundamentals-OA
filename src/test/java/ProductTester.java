@@ -1,9 +1,6 @@
 import br.com.gpbreis.Product;
 
-import java.io.Console;
-import java.util.ArrayList;
 import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
 
 public class ProductTester {
